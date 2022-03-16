@@ -6,10 +6,10 @@ void main(List<String> arguments) {
   N = stdin.readLineSync(); //input
   int? angka = int.parse(N!); //String to angka
   stdout.write("Hasil Faktor : ");
-  for (int i = angka; i > 0; i--) {
+  for (int i = 1; i <= angka; i++) {
     if (angka % i == 0) {
       stdout.write("$i");
-      if (i > 1) {
+      if (i < angka) {
         stdout.write(", ");
       }
     }
